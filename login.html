@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div>
+        <header class="header">
+            <a href="#" class="logo">Xports</a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#">Service</a>
+                <a href="#">Reviews</a>
+                <a href="#">Contact</a>
+                <a href="signupC1.html">Join Us</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="wrapped-login">
+            <h2>Member Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="call"></ion-icon></span>
+                        <input type="tel" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+                        <label>Enter your Phone No.</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Enter your password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember Me</label>
+                        <a href="#">Forgot password</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-link">
+                        <p> Not a member?<a href="#"> Sign-Up Now</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>    
+    </div>    
+</body>
+</html>

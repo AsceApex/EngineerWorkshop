@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif ;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.header .logo{
+  font-size: 1.8em;
+  font-style: italic;
+  font-weight: 600;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
+.nav a {
+  position: relative;
+  font-size: 1.1em;
+  color: #dcddde;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.nav a:hover {
+  color: #fddb3a;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fddb3a;
+  border-radius: 5px;
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav a:hover::after{
+  transform: scaleX(1);
+}
+
+.home {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    background: black;
+    background-image: url('green.jpg'); /* Replace 'wave.jpg' with the actual image path */
+    background-size: cover; /* Cover the entire background area */
+    background-position: center; /* Center the image */
+    display: flex;
+    align-items: center;
+    padding: 80px 100px 0;
+  }
+
+  .home .wrapped-signup{
+    position: relative;
+    margin-left: 60%;
+    margin-bottom: 8%;
+    width: 440px;
+  }
+  
+  .wrapped-signup h2{
+    font-size: 2em;
+    color: snow;
+    text-align: center;
+  }
+
+  .wrapped-signup .input-lines{
+    position: relative;
+    width: 100%;
+    margin: 33px 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-field{
+    width: 48.5%;
+    position: relative;
+  }
+
+  .text-field input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: whitesmoke;
+    padding: 0 25px 0 45px;
+  }
+
+  .text-field label{
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .text-field input:focus~label,
+  .text-field input:valid~label{
+  font-size: .8em;
+  top: -14px;
+  left: 17px;
+}
+
+.text-field .icon{
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  font-size: 1.3em;
+  color: white;
+}
+/*First line code end here*/
+
+.wrapped-signup .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 40px;
+  font-size: 1em;
+  color: whitesmoke;
+  padding: 0 25px 0 45px;
+}
+
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 45px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: white;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+  font-size: .8em;
+  top: -14px;
+  left: 17px;
+}
+
+.input-box .icon{
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.wrapped-signup .btn{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #aaff00, #00ff8c );
+  box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  font-size: 1em;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.wrapped-signup .btn:hover{
+    color: #118000;
+    text-decoration: underline;
+}

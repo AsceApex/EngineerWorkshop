@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="signupC1.css">
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div>
+        <header class="header">
+            <a href="#" class="logo">Xports</a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#">Service</a>
+                <a href="#">Reviews</a>
+                <a href="#">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="wrapped-signup">
+            <h2>Join Us</h2>
+                <form action="#">
+                    <div class="input-lines">
+                        <div class="text-field">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <input type="text" name="FirstName" required>
+                            <label>First Name</label>
+                        </div>
+                        <div class="text-field">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <input type="text" name="LastName" required>
+                            <label>Last Name</label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="call"></ion-icon></span>
+                        <input type="tel" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+                        <label>Enter your Phone No.</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Enter your password</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Confirm your password</label>
+                    </div>
+                    <div class="input-lines">
+                        <div class="text-field">
+                            <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
+                            <input type="text" name="City" required>
+                            <label>City</label>
+                        </div>
+                        <div class="text-field">
+                            <span class="icon"><ion-icon name="compass-outline"></ion-icon></span>
+                            <input type="number" name="Pincode" required>
+                            <label>Pin-Code</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">Sign-Up</button>
+                    </div>
+                </form>
+            </div>
+        </section>    
+</body>
+</html>
